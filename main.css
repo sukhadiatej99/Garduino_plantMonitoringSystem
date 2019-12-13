@@ -1,1 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
 
+*{margin: 0; padding: 0;}
+
+
+#image{
+	
+	height: 100%;
+	width: 100%;
+}
+
+#mainCon{
+	width: 100%;
+}
+
+.top-bar{
+	background-color: #000;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.logo{
+	width: 4%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.menu {
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	
+}
+
+#nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin-top: 35px;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
+.menu ul li a{
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+li {
+	margin-left: 25px;
+}
+
+
+.banner-text{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	display: inline;
+}
+
+.banner-text-items{
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	display: inline;
+}
+
+#container ul
+{
+	height: 200px;
+	width: 200px;
+	color: black;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 1200px;
+	margin-top: 300px;
+	list-style: none;
+	text-align: center;
+	position: absolute;
+}
