@@ -1,3 +1,52 @@
+var temperature = new five.Thermometer({
+		controller: "LM35",
+		pin: "A2",
+		freq: 5000
+	});
+
+	temperature.on("change", function(){
+		// var temp = this.celsius;
+		// valueDiv3.innerHTML = temp;
+		let ctx = document.getElementById('myChart1').getContext('2d');
+		let labels = ['Temperature'];
+		let colorHex = ['#EBC74B'];
+		var per = (100 * this.celsius) / 50;
+		tem.innerHTML = per + "%";
+		let myChart = new Chart(ctx, 
+		{
+
+  			type: 'doughnut',
+  			data: 
+  			{
+    			datasets: [{
+      				data: [this.celsius,50-this.celsius],
+      				backgroundColor: colorHex
+    			}],
+    			labels: labels
+  			},
+  			options: 
+  			{
+    			// responsive: true,
+    			legend: {
+     	 			// position: 'bottom'
+    		}
+  		}
+
+
+	})
+		if(per > 50)
+  		{
+  			tempAlert.innerHTML = "Temperature is really high";
+  		}
+  		else
+  		{
+  			tempAlert.innerHTML = "Temperature is Perfect";
+  		}
+			
+
+		// 
+});
+
 var photoresistor = new five.Sensor({
 		pin : "A0",
 		freq: 5000
