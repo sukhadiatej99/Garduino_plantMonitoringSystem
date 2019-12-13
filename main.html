@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demeter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+<div id="mainCon">
+    <div class="top-bar">
+      <img src="images/logo.png" class="logo"></img>
+      <div class="menu">
+        <ul id="nav">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">My Plants</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Contact</a></li>
+         <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="banner">
+      <div id="container">
+              <ul>
+                <li>
+                    <canvas id="myChart1" width="300" height="300"></canvas>
+                    <p id="tem"></p>
+                          <p id="tempAlert"></p> 
+                </li>
+                <li>
+                  <canvas id="myChart2" width="300" height="300"></canvas>
+                  <p id="phot"></p>
+                  <p id="photoAlert"></p>
+                </li>
+                <li>
+                  <canvas id="myChart3" width="300" height="300"></canvas>
+                  <p id="moist"></p>
+                  <p id="moistAlert"></p>
+                </li>
+              </ul> 
 
+      </div>
+
+      <img src="images/pot.jpg" id="image">            
+    </div>
+ </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
